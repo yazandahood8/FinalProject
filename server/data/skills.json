@@ -1,0 +1,68 @@
+[
+  {
+    "owner": "maria",
+    "skills": [
+      {
+        "category": "Frontend",
+        "skills": [
+          { "name": "React.js", "level": 90 },
+          { "name": "JavaScript (ES6+)", "level": 85 },
+          { "name": "HTML5 & CSS3", "level": 95 },
+          { "name": "Material UI", "level": 80 },
+          { "name": "Bootstrap 5", "level": 80 }
+        ]
+      },
+      {
+        "category": "Backend",
+        "skills": [
+          { "name": "Node.js", "level": 85 },
+          { "name": "Express.js", "level": 80 },
+          { "name": "MongoDB", "level": 75 },
+          { "name": "REST API Design", "level": 85 }
+        ]
+      },
+      {
+        "category": "Tools & Others",
+        "skills": [
+          { "name": "Git & GitHub", "level": 90 },
+          { "name": "Docker", "level": 70 },
+          { "name": "Webpack", "level": 65 },
+          { "name": "Jest (Testing)", "level": 60 }
+        ]
+      }
+    ]
+  },
+  {
+    "owner": "yazan",
+    "skills": [
+      {
+        "category": "Frontend",
+        "skills": [
+          { "name": "React.js", "level": 85 },
+          { "name": "JavaScript (ES6+)", "level": 80 },
+          { "name": "HTML5 & CSS3", "level": 80 },
+          { "name": "Material UI", "level": 75 },
+          { "name": "Bootstrap 5", "level": 70 }
+        ]
+      },
+      {
+        "category": "Backend",
+        "skills": [
+          { "name": "Node.js", "level": 90 },
+          { "name": "Express.js", "level": 85 },
+          { "name": "MongoDB", "level": 80 },
+          { "name": "REST API Design", "level": 80 }
+        ]
+      },
+      {
+        "category": "Tools & Others",
+        "skills": [
+          { "name": "Git & GitHub", "level": 90 },
+          { "name": "Docker", "level": 75 },
+          { "name": "Webpack", "level": 60 },
+          { "name": "Jest (Testing)", "level": 65 }
+        ]
+      }
+    ]
+  }
+]

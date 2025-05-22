@@ -1,0 +1,62 @@
+/* src/pages/Home/Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #aaaaaa;
+}
+
+.profiles {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-card {
+  background-color: #282828;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 200px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.profile-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #bbbbbb;
+}

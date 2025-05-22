@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color: #ff6b6b;
+  --accent-color: #4ecdc4;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky translucent header with blur */
+.custom-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+/* Brand: subtle hover bloom */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand img {
+  transition: transform 0.4s ease;
+}
+.navbar-brand:hover img {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Nav links with animated underline */
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  margin: 0 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0.2rem 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active highlight stays */
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+.navbar-nav .nav-item .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  .navbar-nav .nav-item .nav-link {
+    margin: 0 0.4rem;
+    font-size: 0.9rem;
+  }
+}
