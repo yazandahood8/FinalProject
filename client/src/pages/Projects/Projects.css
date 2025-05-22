@@ -1,0 +1,189 @@
+/* client/src/pages/Projects/Projects.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --bg: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --text-main: #eaeaea;
+  --text-muted: #aaaaaa;
+  --accent: #f7b731;
+  --shadow: rgba(0, 0, 0, 0.7);
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Projects Container */
+.projects-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem 4rem;
+  scroll-snap-type: y mandatory;
+}
+
+/* Page Title */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.projects-title::after {
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 4px;
+  background: var(--accent);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  animation: titleShimmer 2s infinite;
+}
+
+@keyframes titleShimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+/* Filter Bar */
+.projects-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Override MUI Chips */
+.projects-filters .MuiChip-root {
+  background: var(--bg-card);
+  border: 2px solid var(--accent);
+  color: var(--text-main);
+  font-weight: 500;
+}
+.projects-filters .MuiChip-root.MuiChip-colorPrimary {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Search Input */
+.search-input {
+  background: var(--bg-card);
+  border-radius: 0.5rem;
+}
+.search-input .MuiOutlinedInput-root {
+  color: var(--text-main);
+}
+.search-input .MuiOutlinedInput-notchedOutline {
+  border-color: var(--text-muted);
+}
+.search-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--accent);
+}
+.search-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--accent);
+}
+
+/* No Projects Message */
+.no-projects {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-style: italic;
+}
+
+/* Project Card */
+.project-card {
+  background: var(--bg-card);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.75rem 2rem var(--shadow);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.project-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 1.5rem 3rem var(--shadow);
+}
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at center, var(--accent)30%, transparent 40%);
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+.project-card:hover::before {
+  opacity: 0.2;
+}
+
+/* Card Content */
+.project-card .MuiCardContent-root {
+  padding: 2rem;
+}
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.project-owner {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.project-desc {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  height: 4.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1.5rem;
+}
+
+/* View Details Button */
+.project-button {
+  border: 2px solid var(--accent) !important;
+  color: var(--accent) !important;
+  border-radius: 2rem !important;
+  padding: 0.5rem 1.5rem !important;
+  font-weight: 500 !important;
+  transition: background 0.4s, color 0.4s;
+}
+.project-button:hover {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
+
+/* Card Animations */
+@keyframes fadeInUp { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+
+.project-card {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .projects-container { padding: 0 0.5rem 2rem; }
+  .project-card { transform: none !important; }
+}

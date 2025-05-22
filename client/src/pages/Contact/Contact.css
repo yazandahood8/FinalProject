@@ -1,0 +1,109 @@
+/* src/pages/Contact/Contact.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #f7b731;
+  --bg: #0d0d0d;
+  --bg-form: #1a1a1a;
+  --text-main: #eaeaea;
+  --text-muted: #aaaaaa;
+  --shadow: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-page {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1rem 4rem;
+  scroll-snap-align: start;
+}
+
+.contact-title {
+  text-align: center;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 3px;
+  background: var(--accent);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-alert {
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Form styling */
+.contact-form {
+  background: var(--bg-form);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-input .MuiOutlinedInput-root {
+  background: #272727;
+  color: var(--text-main);
+}
+.contact-input .MuiOutlinedInput-notchedOutline {
+  border-color: var(--text-muted);
+}
+.contact-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--accent);
+}
+.contact-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--accent);
+}
+
+.contact-button {
+  align-self: center;
+  background: var(--accent);
+  color: #0d0d0d;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1.5rem var(--shadow);
+  transition: background 0.3s, transform 0.2s;
+}
+.contact-button:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-page {
+    padding-bottom: 2rem;
+  }
+  .contact-form {
+    padding: 1.5rem;
+  }
+}

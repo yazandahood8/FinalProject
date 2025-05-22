@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Personal Portfolio Revamp",
+    "summary": "A complete redesign and performance overhaul of a React-based personal portfolio site, focusing on mobile-first responsiveness and accessibility.",
+    "coverImage": "/casestudies/portfolio-cover.png",
+    "metrics": {
+      "Load Time": "1.2s",
+      "Performance Score": "98",
+      "Accessibility Score": "100",
+      "Engagement Increase": "30%"
+    },
+    "goals": "Redesign the portfolio with a dark theme and improve core web vitals. Increase user engagement and simplify navigation to project sections.",
+    "process": "Conducted stakeholder interviews, created Figma prototypes, implemented the design system with Material UI, added Framer Motion for animated micro-interactions, and optimized images/assets for faster loading.",
+    "challenges": "Balancing rich animations with performance budgets, ensuring 100% keyboard accessibility, and fine-tuning LCP and CLS metrics under heavy visual loads.",
+    "results": "Achieved a Lighthouse performance score of 98, Accessibility 100, and 30% uplift in session duration. Mobile bounce rate decreased by 25%.",
+    "visuals": [
+      "/casestudies/portfolio-wireframe.png",
+      "/casestudies/portfolio-before.png",
+      "/casestudies/portfolio-after.png"
+    ],
+    "pdf": "/casestudies/portfolio-case-study.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Real-Time Task Tracker Deployment",
+    "summary": "Launched a collaborative to-do application with Socket.IO for real-time updates, Dockerized for scalable deployment on AWS ECS.",
+    "coverImage": "/casestudies/tasks-cover.png",
+    "metrics": {
+      "Avg. Latency": "80 ms",
+      "Active Users": "500",
+      "Uptime": "99.9%",
+      "Pull Requests": "45"
+    },
+    "goals": "Enable simultaneous task management for distributed teams with sub-second sync and seamless UX across desktop and mobile.",
+    "process": "Architected a Node.js/Express backend with Socket.IO channels, designed MongoDB schemas, built a React frontend with optimistic UI updates, and containerized the app with Docker and AWS ECS.",
+    "challenges": "Handling race conditions in concurrent updates, ensuring horizontal scalability of WebSocket servers, and securing real-time channels against unauthorized access.",
+    "results": "Supported 500+ concurrent users with avg. latency of 80 ms, maintained 99.9% uptime, and reduced task-sync errors by 95%.",
+    "visuals": [
+      "/casestudies/tasks-architecture.png",
+      "/casestudies/tasks-dashboard.png",
+      "/casestudies/tasks-mobile.png"
+    ],
+    "pdf": "/casestudies/tasks-case-study.pdf"
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce UI Template Case Study",
+    "summary": "Developed a modern, responsive e-commerce UI template using Bootstrap 5 and SCSS, optimized for accessibility and rapid customization.",
+    "coverImage": "/casestudies/ecom-cover.png",
+    "metrics": {
+      "Template Downloads": "3,200",
+      "Performance Score": "96",
+      "Accessibility Score": "90+",
+      "Mobile CTR": "45%"
+    },
+    "goals": "Create a lightweight, theme-ready front-end template that developers can clone and customize, while adhering to WCAG 2.1 AA standards.",
+    "process": "Designed SCSS modules and Bootstrap overrides, implemented dynamic filtering with vanilla JS, built an off-canvas cart UI, and executed an accessibility audit with Axe.",
+    "challenges": "Ensuring consistent theming via SCSS maps, making the price-filter slider keyboard-accessible, and optimizing for <100 kb bundle size.",
+    "results": "Template starred 500+ times on GitHub, downloaded 3,200+ times, performance score 96, accessibility audit passed WCAG 2.1 AA.",
+    "visuals": [
+      "/casestudies/ecom-wireframe.png",
+      "/casestudies/ecom-product-grid.png",
+      "/casestudies/ecom-mobile-view.png"
+    ],
+    "pdf": "/casestudies/ecom-case-study.pdf"
+  }
+]

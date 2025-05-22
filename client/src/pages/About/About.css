@@ -1,0 +1,83 @@
+/* client/src/pages/About/About.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.about-container .role {
+  color: #bb86fc;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-container .location {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.about-container .bio {
+  margin-bottom: 2rem;
+}
+
+.about-container section {
+  margin-bottom: 2rem;
+}
+
+.about-container section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.about-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-container li {
+  margin-bottom: 1rem;
+}
+
+.about-container .notes {
+  font-style: italic;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.about-container .social-list {
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+.about-container .social-list li {
+  list-style: none;
+}
+
+.about-container a {
+  color: #bb86fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-container a:hover {
+  color: #ffffff;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}

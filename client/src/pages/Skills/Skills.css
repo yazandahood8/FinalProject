@@ -1,0 +1,99 @@
+/* src/pages/Skills/Skills.css */
+
+/* Montserrat import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #f7b731;
+  --bg: #0d0d0d;
+  --bg-section: #1a1a1a;
+  --text-main: #eaeaea;
+  --text-muted: #aaaaaa;
+  --shadow: rgba(0, 0, 0, 0.7);
+}
+
+/* Global */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text-main); font-family: 'Montserrat', sans-serif; }
+
+/* Scroll snap */
+.skills-page { max-width: 960px; margin: 3rem auto; padding: 0 1rem 4rem; scroll-snap-type: y mandatory; }
+.skills-page > * { scroll-snap-align: start; }
+
+/* Loading / Error */
+.loading-text, .error-text { color: var(--accent); margin-top: 4rem; font-style: italic; }
+
+/* Header */
+.skills-header { position: relative; margin-bottom: 2rem; }
+.skills-title {
+  font-size: 2.5rem; font-weight: 600; color: var(--accent);
+  position: relative; overflow: hidden;
+}
+.skills-title::after {
+  content: ''; position: absolute; bottom: -4px; left: 50%;
+  width: 6rem; height: 4px; background: var(--accent);
+  transform: translateX(-50%); border-radius: 2px;
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+/* Section Card */
+.skills-section {
+  background: var(--bg-section); padding: 1.5rem;
+  border-radius: 1rem; box-shadow: 0 0.75rem 2rem var(--shadow);
+  overflow: hidden; position: relative;
+}
+.skills-section::before {
+  content: ''; position: absolute; top: -30%; right: -30%;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, var(--accent)30%, transparent 60%);
+  opacity: 0.1; transition: opacity 0.5s;
+}
+.skills-section:hover::before { opacity: 0.2; }
+
+/* Category Heading */
+.skills-category {
+  font-size: 1.25rem; color: var(--secondary);
+  margin-bottom: 1rem; position: relative;
+}
+.skills-category::before {
+  content: ''; position: absolute; bottom: -6px; left: 0;
+  width: 3rem; height: 3px; background: var(--secondary); border-radius: 2px;
+}
+
+/* Skill Bar */
+.skill-bar {
+  --delay: 0s; --level: 0%;
+  margin-bottom: 1.2rem; opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+}
+.skill-name { font-size: 1rem; margin-bottom: 0.3rem; color: var(--text-main); }
+.bar-bg {
+  background: var(--bg); border-radius: 1rem;
+  height: 0.75rem; overflow: hidden; margin-bottom: 0.3rem;
+}
+.bar-fill {
+  background: var(--primary); height: 100%; width: 0;
+  animation: fillBar 1s ease-out forwards;
+  animation-delay: var(--delay);
+}
+@keyframes fillBar { to { width: var(--level); } }
+.skill-level { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+
+/* Animations */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-page { padding-bottom: 2rem; }
+  .skills-section { margin-bottom: 1.5rem; }
+}

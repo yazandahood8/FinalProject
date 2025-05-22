@@ -1,0 +1,410 @@
+[
+  {
+    "owner": "maria",
+    "profile": {
+      "personal": {
+        "fullName": "Maria Elheeb",
+        "title": "Fullstack Developer",
+        "location": "Kiryat Shmona, Israel",
+        "email": "maria.elheeb@example.com",
+        "phone": "+972-50-123-4567",
+        "photoUrl": "icon2.png",
+        "linkedIn": "https://linkedin.com/in/maria-elheeb",
+        "github": "https://github.com/maria",
+        "website": "https://maria-portfolio.com",
+        "summary": "Highly motivated third-year Computer Science student at Tel Hai College with 2+ years of full-stack development experience. Expertise in building responsive, dark-themed portfolios and data-driven applications using React, Node.js, and MongoDB. Passionate about UI/UX design, performance optimization, and clean code practices.",
+        "hobbies": ["Photography", "Hiking", "Cooking", "Game Development"],
+        "availability": "Open to freelance & full-time roles from July 2025",
+        "languagesSpoken": [
+          { "language": "English", "level": "Fluent" },
+          { "language": "Hebrew", "level": "Advanced" },
+          { "language": "Arabic", "level": "Conversational" }
+        ]
+      },
+      "education": [
+        {
+          "institution": "Tel Hai College",
+          "degree": "B.Sc. Computer Science",
+          "fieldOfStudy": "Software Engineering",
+          "startDate": "2023-09-01",
+          "endDate": "Present",
+          "gpa": 3.0,
+          "honors": "Dean’s List 2024"
+        },
+        {
+          "institution": "Coursera / University of Michigan",
+          "degree": "Certificate in UI/UX Design",
+          "fieldOfStudy": "User Experience Design",
+          "startDate": "2024-02-01",
+          "endDate": "2024-04-15",
+          "notes": "Project: Redesigned e-commerce checkout flow"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Perach Mentoring Program",
+          "role": "Student Mentor",
+          "startDate": "2024-02-01",
+          "endDate": "2024-05-01",
+          "responsibilities": [
+            "Mentored undergraduate student in computer science concepts",
+            "Designed group activities to reinforce teamwork and problem-solving",
+            "Coordinated with program coordinator to track student progress"
+          ],
+          "achievements": [
+            "Improved mentee’s course grades by 20%",
+            "Received positive feedback from program director"
+          ]
+        },
+        {
+          "company": "Freelance",
+          "role": "Fullstack Developer",
+          "startDate": "2024-06-15",
+          "endDate": "2024-11-30",
+          "responsibilities": [
+            "Designed and implemented personal portfolio with React, Material UI, and Framer Motion",
+            "Built RESTful API in Node.js/Express and deployed to Heroku",
+            "Integrated continuous deployment with GitHub Actions"
+          ],
+          "achievements": [
+            "Deployed to production with 99.9% uptime",
+            "Portfolio received over 1,000 visits in first month"
+          ]
+        },
+        {
+          "company": "Marshall Center",
+          "role": "Volunteer Developer & Tester",
+          "startDate": "2025-01-10",
+          "endDate": "2025-02-28",
+          "responsibilities": [
+            "Assisted in developing accessibility features for visually impaired users",
+            "Ran usability tests and documented feedback"
+          ],
+          "achievements": [
+            "Optimized color contrast for accessibility compliance",
+            "Implemented audio feedback for key UI interactions"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "name": "Portfolio Website",
+          "description": "Dark-themed React/MUI portfolio with dynamic project listing, animations, and contact form.",
+          "url": "https://maria-portfolio.com",
+          "technologies": ["React", "Material UI", "Framer Motion", "Node.js", "Express"],
+          "role": "Lead Developer & Designer",
+          "metrics": {
+            "uniqueVisitors": 1200,
+            "performanceScore": 98
+          }
+        },
+        {
+          "name": "Final Project Movies",
+          "description": "Fullstack movie search and favorites app using OMDB and YouTube APIs.",
+          "url": "",
+          "technologies": ["React", "Node.js", "MongoDB", "Bootstrap 5"],
+          "role": "Fullstack Developer",
+          "metrics": {
+            "apiCallsHandled": 50000,
+            "averageLatencyMs": 120
+          }
+        },
+        {
+          "name": "Hospital Management System (Android)",
+          "description": "Java/Android app with Firebase integration for patient records and appointment scheduling.",
+          "url": "",
+          "technologies": ["Java", "Android Studio", "Firebase"],
+          "role": "Mobile Team Lead",
+          "metrics": {
+            "dailyActiveUsers": 150,
+            "featureCoverage": 95
+          }
+        }
+      ],
+      "skills": {
+        "languages": [
+          { "name": "JavaScript (ES6+)", "level": 90 },
+          { "name": "TypeScript", "level": 75 },
+          { "name": "Python", "level": 70 }
+        ],
+        "frontend": [
+          { "name": "React.js", "level": 90 },
+          { "name": "Material UI", "level": 80 },
+          { "name": "Bootstrap 5", "level": 80 }
+        ],
+        "backend": [
+          { "name": "Node.js", "level": 85 },
+          { "name": "Express.js", "level": 80 },
+          { "name": "MongoDB", "level": 75 }
+        ],
+        "tools": [
+          { "name": "Git & GitHub", "level": 90 },
+          { "name": "Docker", "level": 70 },
+          { "name": "Webpack", "level": 65 }
+        ],
+        "softSkills": [
+          "Communication",
+          "Leadership",
+          "Problem-Solving",
+          "Time Management"
+        ]
+      },
+      "certifications": [
+        {
+          "name": "Fullstack Web Development",
+          "issuer": "Coursera",
+          "date": "2024-04-20"
+        },
+        {
+          "name": "UI/UX Design Specialization",
+          "issuer": "University of Michigan / Coursera",
+          "date": "2024-05-15"
+        }
+      ],
+      "awards": [
+        {
+          "title": "Melgo Scholarship",
+          "date": "2025-05-01",
+          "description": "Awarded 10,000 NIS for academic excellence"
+        },
+        {
+          "title": "Dean’s List",
+          "date": "2024-06-01",
+          "description": "Recognized for top 10% GPA"
+        }
+      ],
+      "volunteerExperience": [
+        {
+          "organization": "Abu Shehab After-School Club",
+          "role": "Program Assistant",
+          "date": "2018-03-01",
+          "description": "Supported children’s homework and organized recreational activities"
+        }
+      ],
+      "openSourceContributions": [
+        {
+          "repo": "facebook/react",
+          "contributions": 5,
+          "date": "2024-02-10"
+        },
+        {
+          "repo": "mui/material-ui",
+          "contributions": 3,
+          "date": "2024-03-22"
+        }
+      ],
+      "publications": [
+        {
+          "title": "A Study on Dark-Mode UX Patterns",
+          "publisher": "Dev Journal",
+          "date": "2024-08-01",
+          "url": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Dr. Eliezer Lev",
+          "relationship": "Algorithms Professor",
+          "contact": "eliezer.lev@telhai.ac.il"
+        }
+      ],
+      "interests": ["Open Source Contribution", "UI/UX Design", "Mentorship", "Machine Learning"]
+    }
+  },
+  {
+    "owner": "yazan",
+    "profile": {
+      "personal": {
+        "fullName": "Yazan Dawud",
+        "title": "Software Engineer",
+        "location": "Haifa, Israel",
+        "email": "yazan.dawud@example.com",
+        "phone": "+972-54-765-4321",
+        "photoUrl": "icon1.png",
+        "linkedIn": "https://linkedin.com/in/yazan-dawud",
+        "github": "https://github.com/yazan",
+        "website": "https://yazan-tasks.com",
+        "summary": "Results-driven software engineer with 3+ years of experience in backend and real-time systems. Skilled in Node.js, Express, Socket.IO, and React. Passionate about scalable architecture, performance tuning, and clean code standards.",
+        "hobbies": ["Chess", "Cycling", "Writing Tech Blogs", "Open Source Collaboration"],
+        "availability": "Open to contract & full-time roles immediately",
+        "languagesSpoken": [
+          { "language": "English", "level": "Fluent" },
+          { "language": "Arabic", "level": "Native" },
+          { "language": "Hebrew", "level": "Intermediate" }
+        ]
+      },
+      "education": [
+        {
+          "institution": "University of Haifa",
+          "degree": "B.Sc. Software Engineering",
+          "fieldOfStudy": "Distributed Systems",
+          "startDate": "2020-09-01",
+          "endDate": "2024-06-30",
+          "gpa": 3.4,
+          "honors": "Graduated with Honors"
+        },
+        {
+          "institution": "Udemy",
+          "degree": "Real-Time Web Applications",
+          "fieldOfStudy": "Socket.IO & Websockets",
+          "startDate": "2023-05-01",
+          "endDate": "2023-07-15"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Tech Solutions Ltd.",
+          "role": "Backend Developer Intern",
+          "startDate": "2023-03-01",
+          "endDate": "2023-08-31",
+          "responsibilities": [
+            "Developed RESTful APIs in Node.js/Express",
+            "Integrated Socket.IO for live data feeds",
+            "Collaborated with frontend team on React features"
+          ],
+          "achievements": [
+            "Reduced API response times by 30%",
+            "Built monitoring dashboards using Grafana"
+          ]
+        },
+        {
+          "company": "Freelance",
+          "role": "Fullstack Developer",
+          "startDate": "2024-01-10",
+          "endDate": "2024-07-15",
+          "responsibilities": [
+            "Architected real-time task tracker with Socket.IO",
+            "Implemented drag-and-drop UI in React",
+            "Deployed MongoDB cluster with proper indexing"
+          ],
+          "achievements": [
+            "Supported 500+ concurrent users in real-time",
+            "Achieved 99.8% uptime in production"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "name": "Real-Time Task Tracker",
+          "description": "Collaborative to-do application with live updates and role-based permissions.",
+          "url": "https://yazan-tasks.com",
+          "technologies": ["React", "Node.js", "Socket.IO", "MongoDB"],
+          "role": "Lead Developer",
+          "metrics": {
+            "activeUsers": 1200,
+            "messagesPerMinute": 300
+          }
+        },
+        {
+          "name": "Collaborative Document Editor",
+          "description": "Operational Transform-based real-time editor supporting multiple cursors and histories.",
+          "url": "https://collab-editor-demo.com",
+          "technologies": ["React", "Node.js", "OT.js", "Redis"],
+          "role": "R&D Engineer",
+          "metrics": {
+            "documentsEdited": 8500,
+            "averageLatencyMs": 40
+          }
+        },
+        {
+          "name": "Expense Tracker Mobile App",
+          "description": "Cross-platform React Native app for personal expense tracking with charts and offline sync.",
+          "url": "",
+          "technologies": ["React Native", "Redux", "SQLite", "Expo"],
+          "role": "Mobile Developer",
+          "metrics": {
+            "downloads": 2500,
+            "dailyActiveUsers": 400
+          }
+        }
+      ],
+      "skills": {
+        "languages": [
+          { "name": "JavaScript (ES6+)", "level": 90 },
+          { "name": "TypeScript", "level": 80 },
+          { "name": "Python", "level": 65 }
+        ],
+        "frontend": [
+          { "name": "React.js", "level": 85 },
+          { "name": "Bootstrap 5", "level": 70 }
+        ],
+        "backend": [
+          { "name": "Node.js", "level": 90 },
+          { "name": "Express.js", "level": 85 },
+          { "name": "Socket.IO", "level": 80 }
+        ],
+        "tools": [
+          { "name": "Docker", "level": 75 },
+          { "name": "Redis", "level": 70 },
+          { "name": "Grafana", "level": 60 }
+        ],
+        "softSkills": [
+          "Critical Thinking",
+          "Collaboration",
+          "Adaptability",
+          "Mentoring"
+        ]
+      },
+      "certifications": [
+        {
+          "name": "Real-Time Web Applications",
+          "issuer": "Udemy",
+          "date": "2023-07-10"
+        },
+        {
+          "name": "Advanced Node.js",
+          "issuer": "Pluralsight",
+          "date": "2024-03-15"
+        }
+      ],
+      "awards": [
+        {
+          "title": "Hackathon Winner",
+          "date": "2023-09-10",
+          "description": "First place in university hackathon for real-time chat app"
+        },
+        {
+          "title": "Dean’s List",
+          "date": "2022-12-01",
+          "description": "Top 5% academic performance"
+        }
+      ],
+      "volunteerExperience": [
+        {
+          "organization": "Open Source Community",
+          "role": "Contributor & Reviewer",
+          "date": "2023-04-01",
+          "description": "Reviewed and merged PRs for popular Node.js libraries"
+        }
+      ],
+      "openSourceContributions": [
+        {
+          "repo": "socketio/socket.io",
+          "contributions": 8,
+          "date": "2024-02-20"
+        },
+        {
+          "repo": "reduxjs/redux",
+          "contributions": 2,
+          "date": "2024-01-18"
+        }
+      ],
+      "publications": [
+        {
+          "title": "Optimizing WebSocket Performance",
+          "publisher": "Tech Journal",
+          "date": "2024-10-05",
+          "url": ""
+        }
+      ],
+      "references": [
+        {
+          "name": "Prof. Ran Ziv",
+          "relationship": "Operating Systems Instructor",
+          "contact": "ran.ziv@univ-haifa.ac.il"
+        }
+      ],
+      "interests": ["Distributed Systems", "Performance Tuning", "Open Source", "Tech Blogging"]
+    }
+  }
+]

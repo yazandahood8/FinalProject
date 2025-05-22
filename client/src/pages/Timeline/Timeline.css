@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --bg: #0d0d0d;
+  --bg-section: #1a1a1a;
+  --text-main: #eaeaea;
+  --text-muted: #aaaaaa;
+  --accent: #f7b731;
+  --shadow: rgba(0, 0, 0, 0.7);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text-main); font-family: 'Montserrat', sans-serif; }
+
+.timeline-page { max-width: 960px; margin: 3rem auto; padding: 0 1rem 4rem; }
+.timeline-title { text-align: center; font-size: 2.5rem; color: var(--accent); margin-bottom: 2rem; position: relative; }
+.timeline-title::after { content: ''; display: block; width: 6rem; height: 4px; background: var(--accent); margin: 0.5rem auto 0; border-radius: 2px; }
+
+.timeline-container { position: relative; padding: 2rem 0; }
+.timeline-container::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: var(--accent); transform: translateX(-50%); }
+
+.timeline-item { position: relative; width: 45%; padding: 1.5rem; background: var(--bg-section); border-radius: 1rem; box-shadow: 0 0.75rem 2rem var(--shadow); margin-bottom: 2rem; }
+.timeline-item.left { left: 0; margin-right: auto; }
+.timeline-item.right { left: 55%; }
+
+.timeline-item::after { content: ''; position: absolute; top: 1.5rem; width: 1rem; height: 1rem; background: var(--primary); border: 3px solid var(--bg-section); border-radius: 50%; }
+.timeline-item.left::after { right: -0.5rem; }
+.timeline-item.right::after { left: -0.5rem; }
+
+.timeline-date { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.timeline-type { font-size: 1rem; color: var(--secondary); margin-bottom: 0.25rem; }
+.timeline-title { font-size: 1.25rem; font-weight: 500; margin-bottom: 0.5rem; }
+.timeline-details { font-size: 0.9rem; line-height: 1.4; color: var(--text-main); }
+
+@media (max-width: 768px) {
+  .timeline-container::before { left: 8px; }
+  .timeline-item { width: 100%; left: 0; padding-left: 2.5rem; margin-bottom: 2rem; }
+  .timeline-item.right { left: 0; }
+  .timeline-item.left::after { left: 0; }
+}

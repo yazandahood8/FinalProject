@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "owner": "maria",
+    "title": "Personal Portfolio Website",
+    "category": "Web Application",
+    "client": "Self-Initiated",
+    "description": "A fully responsive, dark-themed portfolio showcasing projects, blog posts, and a contact form.",
+    "role": "Lead Frontend Developer & UX Designer",
+    "roleDescription": "Owned the design system, component library, and all UX flows end-to-end.",
+    "technologies": ["React", "Material UI", "Framer Motion", "Bootstrap 5", "CSS3", "HTML5"],
+    "techDetails": {
+      "stateManagement": "React Context + Hooks",
+      "animations": "Framer Motion page/hover transitions",
+      "forms": "Formik + Yup validation",
+      "deployment": "Netlify (CI via GitHub Actions)"
+    },
+    "features": [
+      "Animated gradient hero section with scroll reveal",
+      "Profile cards with 3D tilt & hover animations",
+      "Smooth scroll, page transitions & anchor nav",
+      "Dynamic tech-stack progress bars",
+      "Contact form with email notifications (EmailJS)"
+    ],
+    "responsibilities": [
+      "Designed dark-mode UI/UX mockups in Figma",
+      "Built reusable component library with MUI theming",
+      "Integrated Framer Motion for micro-interactions",
+      "Set up GitHub Actions CI/CD pipeline to Netlify",
+      "Authored Jest + React Testing Library unit tests"
+    ],
+    "duration": { "start": "2024-09-01", "end": "2024-11-15" },
+    "timelineBreakdown": {
+      "Design": "2 weeks",
+      "Development": "6 weeks",
+      "Testing & Launch": "2 weeks"
+    },
+    "teamSize": 1,
+    "collaborators": [],
+    "methodologies": ["Agile (Scrum)", "Design Thinking"],
+    "challenges": [
+      "Optimizing LCP for hero animations",
+      "Ensuring form accessibility and keyboard nav"
+    ],
+    "lessonsLearned": [
+      "Leveraged image lazy-loading to improve CLS",
+      "Fine-tuned MUI theme overrides for global consistency"
+    ],
+    "metrics": {
+      "uniqueVisitors": 1500,
+      "performanceScore": 98,
+      "accessibilityScore": 100
+    },
+    "testing": {
+      "unitCoverage": "85%",
+      "e2e": "Cypress smoke tests"
+    },
+    "CI_CD": {
+      "pipeline": "GitHub Actions",
+      "deploy": "Netlify"
+    },
+    "liveDemo": "https://maria-portfolio.com",
+    "videoDemo": "https://youtu.be/portfolio-demo",
+    "repoLink": "https://github.com/maria/portfolio",
+    "license": "MIT",
+    "tags": ["portfolio", "dark-mode", "responsive", "accessibility"],
+    "screenshotUrls": [
+      "/screenshots/portfolio-hero.png",
+      "/screenshots/portfolio-projects.png"
+    ],
+    "userTestimonials": [
+      {
+        "name": "Jane Doe",
+        "position": "Hiring Manager, Acme Co.",
+        "quote": "Maria’s portfolio impressed our entire team—stunning in both design and performance."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "owner": "yazan",
+    "title": "Real-Time Task Tracker",
+    "category": "SaaS Web App",
+    "client": "Product School Capstone",
+    "description": "Collaborative to-do app with real-time updates via WebSockets, for teams to manage shared task lists.",
+    "role": "Fullstack Developer",
+    "roleDescription": "Architected the backend API and real-time sync layer; built the React frontend.",
+    "technologies": ["React", "Node.js", "Express", "Socket.IO", "MongoDB", "Bootstrap 5"],
+    "techDetails": {
+      "backend": "Express + Socket.IO",
+      "db": "MongoDB Atlas + Mongoose",
+      "frontend": "React + Context API",
+      "containerization": "Docker Compose"
+    },
+    "features": [
+      "JWT-based authentication & role-based access",
+      "Live task updates across multiple clients",
+      "Drag-and-drop reordering (react-beautiful-dnd)",
+      "Due date reminders & push notifications",
+      "Mobile-first responsive design"
+    ],
+    "responsibilities": [
+      "Designed REST API and real-time endpoints",
+      "Built React UI with Context API and hooks",
+      "Modeled MongoDB schemas with indexing",
+      "Integrated Docker for dev and staging",
+      "Wrote integration tests (Jest + Supertest)"
+    ],
+    "duration": { "start": "2024-06-01", "end": "2024-08-30" },
+    "timelineBreakdown": {
+      "Planning": "1 week",
+      "Backend": "4 weeks",
+      "Frontend": "3 weeks",
+      "QA & Deployment": "1 week"
+    },
+    "teamSize": 2,
+    "collaborators": ["Alice Smith (UX)"],
+    "methodologies": ["Kanban", "TDD"],
+    "challenges": [
+      "Handling concurrent updates without conflicts",
+      "Optimizing Socket.IO scaling under load"
+    ],
+    "lessonsLearned": [
+      "Implemented optimistic UI updates for smoother UX",
+      "Used Redis pub/sub for horizontal scaling"
+    ],
+    "metrics": {
+      "activeUsers": 400,
+      "avgLatencyMs": 80,
+      "uptime": "99.8%"
+    },
+    "testing": {
+      "unitCoverage": "75%",
+      "integrationCoverage": "65%"
+    },
+    "CI_CD": {
+      "pipeline": "GitHub Actions",
+      "dockerRegistry": "Docker Hub"
+    },
+    "liveDemo": "https://yazan-tasks.com",
+    "videoDemo": "https://youtu.be/task-tracker-demo",
+    "repoLink": "https://github.com/yazan/task-tracker",
+    "license": "Apache-2.0",
+    "tags": ["real-time", "collaboration", "docker", "websockets"],
+    "screenshotUrls": [
+      "/screenshots/tasks-dashboard.png",
+      "/screenshots/tasks-mobile-view.png"
+    ],
+    "userTestimonials": [
+      {
+        "name": "Team Lead, StartX",
+        "position": "Product Manager",
+        "quote": "Yazan’s task tracker was rock-solid in performance and reliability."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "owner": "maria",
+    "title": "E-Commerce UI Template",
+    "category": "UI Kit / Template",
+    "client": "Open-Source",
+    "description": "Modern e-commerce front-end template with product listings, filtering, and cart, built with Bootstrap 5 and SCSS.",
+    "role": "UI/UX Designer & Frontend Developer",
+    "roleDescription": "Crafted design system and implemented SCSS modules with Bootstrap overrides.",
+    "technologies": ["HTML5", "SCSS", "Bootstrap 5", "JavaScript", "jQuery"],
+    "techDetails": {
+      "styling": "SCSS modular architecture",
+      "layout": "Bootstrap 5 grid & utilities",
+      "plugins": "noUiSlider, Lightbox2"
+    },
+    "features": [
+      "Responsive product grid with hover animations",
+      "Sidebar filters, price range slider",
+      "Off-canvas cart and multi-step checkout",
+      "Form validation with vanilla JS",
+      "Accessibility audit completed"
+    ],
+    "responsibilities": [
+      "Designed UI mockups and style guide",
+      "Implemented SCSS modules and Bootstrap theme",
+      "Built dynamic filtering & cart logic",
+      "Optimized images (WebP) for performance",
+      "Conducted WCAG 2.1 AA accessibility tests"
+    ],
+    "duration": { "start": "2023-12-01", "end": "2024-02-15" },
+    "timelineBreakdown": {
+      "Design & Prototyping": "2 weeks",
+      "Development": "6 weeks",
+      "Testing": "2 weeks"
+    },
+    "teamSize": 1,
+    "collaborators": [],
+    "methodologies": ["UX Sprint", "Mobile-First"],
+    "challenges": [
+      "Ensuring cross-browser consistency",
+      "Implementing accessible cart interactions"
+    ],
+    "lessonsLearned": [
+      "Advanced use of SCSS maps for theming",
+      "Bootstrap utility API for rapid prototyping"
+    ],
+    "metrics": {
+      "templateDownloads": 3200,
+      "performanceScore": 96
+    },
+    "testing": {
+      "a11yScore": "90+",
+      "crossBrowser": "Chrome, Safari, Firefox, Edge"
+    },
+    "CI_CD": {
+      "repoDeploy": "GitHub Pages"
+    },
+    "liveDemo": "https://maria-ecommerce-template.com",
+    "videoDemo": "https://youtu.be/ecommerce-demo",
+    "repoLink": "https://github.com/maria/ecommerce",
+    "license": "MIT",
+    "tags": ["template", "e-commerce", "accessibility", "scss"],
+    "screenshotUrls": [
+      "/screenshots/ecom-home.png",
+      "/screenshots/ecom-cart.png"
+    ],
+    "userTestimonials": []
+  },
+  {
+    "id": 4,
+    "owner": "yazan",
+    "title": "Blogging Platform with CMS",
+    "category": "Content Management",
+    "client": "Personal Project",
+    "description": "Full-featured MERN blogging platform with admin CMS, WYSIWYG editor, comments, and tagging.",
+    "role": "Backend Engineer & DevOps",
+    "roleDescription": "Built API, CMS, and automated deployments; managed infrastructure.",
+    "technologies": ["MongoDB", "Express", "React", "Node.js", "Quill.js", "Docker", "NGINX"],
+    "techDetails": {
+      "editor": "Quill.js custom modules",
+      "auth": "JWT + role management",
+      "infrastructure": "Docker Compose + NGINX reverse-proxy"
+    },
+    "features": [
+      "Admin dashboard with user/article management",
+      "Rich text editor & image uploads",
+      "Nested comments with moderation workflow",
+      "Tag-based filtering & search",
+      "CI/CD pipeline via GitHub Actions"
+    ],
+    "responsibilities": [
+      "Designed normalized MongoDB schemas",
+      "Implemented Express REST endpoints with JWT auth",
+      "Configured Docker & NGINX for staging/production",
+      "Automated builds & tests in GitHub Actions"
+    ],
+    "duration": { "start": "2024-01-05", "end": "2024-05-15" },
+    "timelineBreakdown": {
+      "Back-end": "8 weeks",
+      "Front-end": "6 weeks",
+      "DevOps & Testing": "4 weeks"
+    },
+    "teamSize": 3,
+    "collaborators": ["DevOps Team Lead", "UI Designer"],
+    "methodologies": ["Scrum", "CI/CD best practices"],
+    "challenges": [
+      "Handling large media uploads securely",
+      "Scaling comment threads performance"
+    ],
+    "lessonsLearned": [
+      "Optimized MongoDB indexing for tag search",
+      "Fine-tuned Docker layers to reduce image size"
+    ],
+    "metrics": {
+      "articlesPublished": 120,
+      "avgResponseTimeMs": 150
+    },
+    "testing": {
+      "unitCoverage": "70%",
+      "e2eCoverage": "50%"
+    },
+    "CI_CD": { "pipeline": "GitHub Actions → AWS ECS" },
+    "liveDemo": "https://blog-cms-demo.com",
+    "videoDemo": "https://youtu.be/blog-cms-demo",
+    "repoLink": "https://github.com/yazan/blog-cms",
+    "license": "GPL-3.0",
+    "tags": ["CMS", "MERN", "docker", "editor"],
+    "screenshotUrls": [
+      "/screenshots/blog-home.png",
+      "/screenshots/blog-admin.png"
+    ],
+    "userTestimonials": [
+      {
+        "name": "Content Strategist, MediaCorp",
+        "quote": "This CMS prototype hit all our needs for rapid content deployment."
+      }
+    ]
+  }
+ 
+]

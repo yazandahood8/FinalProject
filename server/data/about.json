@@ -1,0 +1,82 @@
+[
+  {
+    "owner": "maria",
+    "about": {
+      "name": "Maria Elheeb",
+      "role": "Fullstack Developer",
+      "location": "Kiryat Shmona, Israel",
+      "bio": "I’m a third-year Computer Science student at Tel Hai College and a passionate full-stack developer. I love crafting pixel-perfect UIs with React and Material UI, building robust APIs with Node.js and Express, and deploying scalable apps in the cloud.",
+      "education": [
+        {
+          "institution": "Tel Hai College",
+          "degree": "B.Sc. Computer Science",
+          "years": "2023 – present",
+          "notes": "GPA 72; coursework in Algorithms, Operating Systems, and Automata Theory"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Perach Mentoring Program",
+          "role": "Student Mentor",
+          "years": "2024",
+          "description": "Mentored a young student weekly, designing collaborative activities and supporting academic growth."
+        },
+        {
+          "project": "Final Project Movies",
+          "role": "Fullstack Developer",
+          "years": "2025",
+          "description": "Built a React/Node.js web app for movie search, favorites, and admin panel using OMDB & YouTube APIs."
+        }
+      ],
+      "skills": ["React", "Node.js", "Express", "MongoDB", "Material UI", "Bootstrap 5"],
+      "social": {
+        "github": "https://github.com/maria",
+        "linkedin": "https://linkedin.com/in/maria-elheeb",
+        "website": "https://maria-portfolio.com"
+      },
+      "contact": {
+        "email": "maria.elheeb@example.com"
+      }
+    }
+  },
+  {
+    "owner": "yazan",
+    "about": {
+      "name": "Yazan Dawud",
+      "role": "Software Engineer",
+      "location": "Haifa, Israel",
+      "bio": "I’m a software engineer specializing in building performant, scalable backends with Node.js and Express, and crafting smooth front-end experiences with React.",
+      "education": [
+        {
+          "institution": "University of Haifa",
+          "degree": "B.Sc. Software Engineering",
+          "years": "2020 – 2024",
+          "notes": "Focused on distributed systems and real-time applications"
+        }
+      ],
+      "experience": [
+        {
+          "company": "Tech Solutions Ltd.",
+          "role": "Backend Developer Intern",
+          "years": "2023",
+          "description": "Developed RESTful services and integrated WebSocket features for live data updates."
+        },
+        {
+          "project": "Real-Time Task Tracker",
+          "role": "Fullstack Developer",
+          "years": "2024",
+          "description": "Created a collaborative to-do app with Socket.IO, React frontend, and MongoDB."
+        }
+      ],
+      "skills": ["Node.js", "Express", "Socket.IO", "MongoDB", "React", "Bootstrap 5"],
+      "social": {
+        "github": "https://github.com/yazan",
+        "linkedin": "https://linkedin.com/in/yazan-dawud",
+        "website": "https://yazan-tasks.com"
+      },
+      "contact": {
+        "email": "yazan.dawud@example.com"
+      }
+    }
+  }
+]
